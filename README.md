@@ -2,55 +2,55 @@
 The Hapax Legomena Finder is a C program designed to identify and list hapax legomena from one or more text files. A hapax legomenon is a word that occurs only once in a document. This tool parses the text, counts the occurrences of each word, and outputs words that meet the hapax legomenon criteria.
 
 # Features
--Multi-file Processing: Handles multiple text files in a single run.
+- Multi-file Processing: Handles multiple text files in a single run.
 
--Word Length Filtering: Allows filtering of hapax legomena by word length.
+- Word Length Filtering: Allows filtering of hapax legomena by word length.
 
--Detailed Statistics: Provides a total word count and lists of hapax legomena.
+- Detailed Statistics: Provides a total word count and lists of hapax legomena.
 
--Command-line Interface: Easy-to-use command-line options for flexible operation.
+- Command-line Interface: Easy-to-use command-line options for flexible operation.
 
 # Usage
-hapax <options> <datafile> <datafile> ...
+        hapax <options> <datafile> <datafile> ...
 # Options
--d: Print all data loaded before printing hapax legomena.
-
--h: Display help information.
-
--l <N>: Only print hapax legomena of length <N>. If not specified, all hapax legomena are printed.
+        -d: Print all data loaded before printing hapax legomena.
+        
+        -h: Display help information.
+        
+        -l <N>: Only print hapax legomena of length <N>. If not specified, all hapax legomena are printed.
 
 # Examples
 
 Example 1: Basic Usage
 
-./hapax smalldata.txt
+    ./hapax smalldata.txt
 
 Output:
 
-Total word count 10
-Tally loaded
-Hapax legomena from file 'smalldata.txt':
-    a
-    is
-    line
-    test
-    this
-    three
-    there
-    where
+    Total word count 10
+    Tally loaded
+    Hapax legomena from file 'smalldata.txt':
+        a
+        is
+        line
+        test
+        this
+        three
+        there
+        where
 
 Example 2: Filter by Word Length
 
-./hapax -l 4 smalldata.txt
+    ./hapax -l 4 smalldata.txt
 
 Output: 
 
-Total word count 10
-Tally loaded
-Hapax legomena from file 'smalldata.txt':
-    line
-    test
-    this
+    Total word count 10
+    Tally loaded
+    Hapax legomena from file 'smalldata.txt':
+        line
+        test
+        this
 
 # Implementation Details
 
