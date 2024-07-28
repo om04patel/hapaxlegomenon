@@ -11,8 +11,7 @@ The Hapax Legomena Finder is a C program designed to identify and list hapax leg
 -Command-line Interface: Easy-to-use command-line options for flexible operation.
 
 # Usage
-hapax [<options>] <datafile> [ <datafile> ...]
-
+hapax <options> <datafile> <datafile> ...
 # Options
 -d: Print all data loaded before printing hapax legomena.
 
